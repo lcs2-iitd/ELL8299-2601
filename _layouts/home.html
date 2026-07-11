@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <h1>{{ site.course_name }} <br /> <span style="font-size: 20px;color: #0006;"> {{ site.course_semester }} | <b><a
+                    href="https://forms.gle/A3ZpHd3sB4ErSMA79">Subscribe</a> to Newsletter!</b></span></h1>
+
+    {% include announcements.html %}
+    <!-- <br />
+    <center>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/videoseries?si=o1O0DR8CqqfOU30d&amp;list=PLqGkIjcOyrGnjyBHl4GE2S9kX47X96FH-" title="Intro to LLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </center>
+</br> -->
+    <h2>Course Description</h2>
+    <p>{{ site.course_description }}</p>
+
+    <!-- {{ content }} -->
+
+    {% if site.data.previous_offering and site.data.previous_offering.offerings and
+    site.data.previous_offering.offerings.size > 0 %}
+    <h2>Previous Offerings</h2>
+    <!--p>
+        The course was previously offered in 2024 by Prof. Tanmoy Chakraborty. This
+        course is designed to teach the students about recent advances in the field LLMs, building gradually from the
+        basics. While it is impossible to teach about all recent research, more so in case of a field advancing as
+        rapidly as LLMs, we will try our best to cover the important and well-established topics.
+</p-->
+    <ul class="previous-offerings">
+        {% for offer in site.data.previous_offering.offerings %}
+        <li><a href="{{ offer.url }}" target="_blank">{{offer.title}}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    <br>
+    <div>
+        <div style="width:60%; float: left">
+            <!-- <h2>Instructors</h2> -->
+            <!-- <div class="image--cover-container">
+                <img src="{{site.data.people.instructor.profile_pic | prepend: site.baseurl }}" class="image--cover">
+                <p>{{site.data.people.instructor.name}}</p>
+            </div> -->
+
+            <div class="profile-pic-gallary ">
+                <h2>Instructors</h2>
+                {% for ins in site.data.people.instructors %}
+                <div class="image--cover-container">
+                    <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
+                    {% if ins.webpage %}
+                    <p><a href="{{ ins.webpage }}" target="_blank">{{ins.name}}</a></p>
+                    {% else %}
+                    <p>{{ins.name}}</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div style="width:40%; float: left">
+            <div class="profile-pic-gallary ">
+                <h2>Teaching Assistants</h2>
+                {% for ta in site.data.people.teaching_assistants %}
+                <div class="image--cover-container">
+                    <img src="{{ta.profile_pic | prepend: site.baseurl }}" class="image--cover">
+                    {% if ta.webpage %}
+                    <p><a href="{{ ta.webpage }}" target="_blank">{{ta.name}}</a></p>
+                    {% else %}
+                    <p>{{ta.name}}</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <br>
+    <div style="width:100%; float: left">
+        <h2>Logistics</h2>
+        <ul>
+            <li><b>Timings:</b> Slot H (Monday, Wednesday: 11 am - 12 pm; Thursday: 12 - 1 pm)</li>
+            <li><b>Office hours:</b> Monday: 5 - 5:30 pm</li>
+            <li><b>Classroom:</b> Bharti-301</li>
+            <li><b>News and announcements:</b> All the news and announcements will be posted on Piazza.</li>
+            <li><b>Piazza link:</b> Sign up for <a href="https://piazza.com/iit_delhi/fall2025/ail861ell8299" target="_blank">this
+                    class</a> on Piazza. Check your mail for the access code. Students are encouraged to ask questions and participate in discussions!</li>
+            <li><b>Assignment submission:</b> All assignments should be submitted on Moodle.</li>
+            <li><b>Audit policy:</b> To get an Audit Pass in the course, you must achieve a score equivalent to at least a <b>B- grade or higher</b>.</li>
+            <!-- <li><b>YouTube link:</b> The lecture recordings are uploaded on <a
+                    href="https://www.youtube.com/@lablcs2">this YouTube channel</a>.</li> -->
+        </ul>
+        <br />
+        <h2>Assessment Plan (Tentative)</h2>
+        <ul>
+            <li>Minor: 15%</li>
+            <li>Major: 25%</li>
+            <li>2x Quizzes (in-class): 20%</li>
+            <li>1x Assignment (to be done individually): 15%</li>
+            <li>Project (group-wise): 25%</li>
+        </ul>
+    </div>
+</div>

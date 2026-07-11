@@ -1,0 +1,43 @@
+instructors:
+  - name: Tanmoy Chakraborty
+    profile_pic: /_images/pp/tanmoy.png
+    webpage: https://tanmoychak.com
+    
+  - name: Yatin Nandwani
+    profile_pic: /_images/pp/yatin.jpeg
+    webpage: https://www.linkedin.com/in/yatinnandwani/
+
+  - name: Dinesh Raghu
+    profile_pic: /_images/pp/dinesh.jpeg
+    webpage: https://research.ibm.com/people/dinesh-raghu
+
+  - name: Gaurav Pandey
+    profile_pic: /_images/pp/gaurav.jpg
+    webpage: https://www.linkedin.com/in/gaurav-pandey-11321120/
+
+  - name: Manish Gupta
+    profile_pic: /_images/pp/manish.jpg
+    webpage: https://www.microsoft.com/en-us/research/people/gmanish/
+    
+  - name: Sourish Dasgupta
+    profile_pic: /_images/pp/sourish.jpeg
+    webpage: https://www.daiict.ac.in/faculty-details/2321
+
+instructors_row_split: 3
+    
+teaching_assistants:
+  - name: Anwoy
+    profile_pic: /_images/pp/anwoy.png
+    webpage: https://c-anwoy.github.io/
+
+  - name: Aswini
+    profile_pic: /_images/pp/aswini.png
+    webpage: https://aswininlp.github.io/
+
+  - name: Prottay
+    profile_pic: /_images/pp/pro.png
+    webpage: https://proadhikary.github.io
+
+  - name: Shashank
+    profile_pic: /_images/pp/shashank.png
+    webpage: https://www.linkedin.com/in/shashank-agarwal-670058221/
