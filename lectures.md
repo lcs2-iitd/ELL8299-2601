@@ -3,23 +3,105 @@ layout: lectures
 title: Lectures
 permalink: /lectures/
 ---
-You can download the lectures here. <b>🔔 [Subscribe](https://forms.gle/A3ZpHd3sB4ErSMA79) to our newsletter for the latest updates on LLMs!</b>
+<!-- You can download the lectures here.  -->
+<!-- <b>🔔 [Subscribe](https://forms.gle/A3ZpHd3sB4ErSMA79) to our newsletter for the latest updates on LLMs!</b> -->
 
-<!-- **Tentative Topics:**
-1. Course Introduction
-2. Introduction to Transformers
-3. Pre-training and Post-training Strategies
-4. Alignment of Language Models (PPO, DPO, GRPO, MCTS, PRMs, etc.)
-5. Efficient Design, Training and Inference in Language Models (MoEs, RoPE, Efficient Attention Mechanisms, KV Caching, vLLM, Efficient Inference Techniques)
-6. Parameter Efficient Fine-Tuning of LLMs
-7. Model Compression
-8. Retrieval-Augmented Language Models
-9. LLM Agents (Function Calling, Design Decisions, Protocols, etc.)
-10. Large Reasoning Models (LRMs)
-11. Multimodal Models
-12. Alternative LLM Architectures (State Space Models, Diffusion-based Models, etc.)
-13. Physics of Language Models
-14. Interpreting the Inner Workings of LLMs
-15. Conclusion -->
+## Tentative Topics
 
+- **Foundations of Large Language Models**
+  - Transformers and self-attention
+  - Pre-training and scaling
+  - Instruction fine-tuning
+  - Alignment and preference optimization
+  - Decoding strategies
+
+- **Privacy in Large Language Models**
+  - Privacy fundamentals
+  - Text sanitization
+  - Memorization and data extraction
+  - Membership inference attacks
+  - Prompt and in-context learning leakage
+  - Prompt injection attacks
+  - Differential privacy
+  - Privacy-preserving in-context learning
+  - Synthetic data generation
+  - Federated learning
+  - Machine unlearning
+  - Trusted execution environments and cryptographic techniques
+
+- **Security and Robustness**
+  - Adversarial attacks in continuous and discrete spaces
+  - Gradient-based discrete optimization
+  - Jailbreaking techniques
+  - Transferability of adversarial attacks
+  - Safety training failures
+  - Training data poisoning
+  - Alignment faking
+  - Evaluation awareness
+  - Chain-of-thought faithfulness
+  - Indirect prompt injection
+  - Memory poisoning in agentic systems
+  - Monitoring and verification
+  - Automated red teaming
+  - Policy languages and compositional verification
+
+- **Bias and Fairness**
+  - Foundations of fairness
+  - Social and algorithmic bias
+  - Fairness metrics and benchmarks
+  - Bias in pre-training, tokenization, and RLHF
+  - Debiasing techniques
+  - Limitations of current approaches
+  - Policy and governance considerations
+
+- **Watermarking**
+  - Motivation and applications
+  - Properties of effective watermarks
+  - Formal problem formulation
+  - Red–Green watermarking
+  - Training-time and decoding-time watermarking
+  - Threat models and attacks
+
+- **Hallucination and Factuality**
+  - Causes of hallucinations
+  - Hallucination detection benchmarks
+  - Evaluation metrics
+  - Decoding-based mitigation
+  - Post-hoc verification
+  - Self-correction
+  - Retrieval-Augmented Generation (RAG)
+
+- **Uncertainty and Trustworthy Generation**
+  - Confidence estimation and calibration
+  - Self-knowledge in language models
+  - Semantic uncertainty
+  - Unsupported claim detection
+  - Claim-level risk estimation
+  - Abstention and deferral
+  - Risk-controlled generation
+  - Evidence grounding
+  - Auditability and oversight
+  - Grounded and governed LLM systems
+  - LLM judges, RAG, multimodal systems, and AI agents
+
+- **Interpretability**
+  - Attention and feature attribution
+  - Mechanistic interpretability
+  - Probing methods
+  - Logit Lens and Patchscopes
+  - Activation patching
+  - Neuron-level analysis
+  - Circuits and causal abstraction
+  - Polysemanticity
+  - Linear representation hypothesis
+  - Dictionary learning
+  - Transcoders and cross-coders
+  - Model diffing
+  - Activation steering
+  - Interpretability for alignment and safety
+
+- **Emerging Research Directions**
+  - Open challenges in trustworthy LLMs
+  - Responsible deployment of foundation models
+  - Future directions in safe, reliable, and accountable AI
  

@@ -3,9 +3,11 @@ layout: page
 title: Project
 permalink: /project/
 ---
-<b>🔔 [Subscribe](https://forms.gle/A3ZpHd3sB4ErSMA79) to our newsletter for the latest updates on LLMs!</b>
+<!-- <b>🔔 [Subscribe](https://forms.gle/A3ZpHd3sB4ErSMA79) to our newsletter for the latest updates on LLMs!</b> -->
 
-## INSTRUCTIONS
+Coming Soon. Stay Tuned.
+
+<!-- ## INSTRUCTIONS
 
 We are floating five problem statements for the course project of AIL861/ELL881/ELL8299.
 
@@ -24,4 +26,4 @@ We are floating five problem statements for the course project of AIL861/ELL881/
     - Anwoy Chatterjee (`C-anwoy`)
 - If you are interested in doing a self-proposed project, please discuss your proposal with Prof. Tanmoy after the class or meet him in his office, or get formal approval by mailing him.
 - Each project can be taken up by a maximum of 4 groups (each group can have up to 2 members), allotted on a first-come, first-served basis. Select your project quickly and fill in your details in [this sheet](https://docs.google.com/spreadsheets/d/16jZugL5oHfOby2s1prWs9qLbGY7DvvOFv0zvrBT1gxo/edit?usp=sharing).
-- Last but not least, enjoy the exploration in your project. Experiment with any idea you get. Think about the problem. All problems are of an exploratory nature - choose the one that aligns best with your interests.
+- Last but not least, enjoy the exploration in your project. Experiment with any idea you get. Think about the problem. All problems are of an exploratory nature - choose the one that aligns best with your interests. -->
