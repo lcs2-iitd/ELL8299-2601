@@ -7,6 +7,10 @@ items:
   name: Schedule
   icon_class: fas fa-calendar-alt
 
+- url: /course-plan/
+  name: Course Plan
+  icon_class: fas fa-bookmark
+  
 - url: /lectures/
   name: Lectures
   icon_class: fas fa-book-reader
