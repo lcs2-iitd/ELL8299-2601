@@ -8,7 +8,7 @@ items:
   icon_class: fas fa-calendar-alt
 
 - url: /course-plan/
-  name: Course Plan
+  name: Plan
   icon_class: fas fa-bookmark
   
 - url: /lectures/
