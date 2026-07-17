@@ -248,7 +248,7 @@ ul.listing li.listing-seperator { padding-top: 15px; font-weight: bold; font-fam
 
 ul.listing li.listing-item time { color: #333; font-weight: 500; text-transform: uppercase; padding-right: 10px; }
 
-ul.listing li.listing-item a { color: #c21717; font-weight: 400; font-family: 'Titillium Web', sans-serif; }
+ul.listing li.listing-item a { color: #c21717; font-weight: 400; }
 
 /*------ archive type stuff ------ */
 ul#archive { list-style-type: none; margin: 0 0 1em 0; padding: 0; }
