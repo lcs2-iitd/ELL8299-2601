@@ -26,11 +26,11 @@ instructors:
 instructors_row_split: 3
     
 teaching_assistants:
-  - name: Sudipto
+  - name: Sudipto Ghosh
     profile_pic: /_images/pp/sudipto.jpg
     webpage: https://sudipto.ghosh.pro/
 
-  - name: Prottay
+  - name: Prottay Kumar Adhikary
     profile_pic: /_images/pp/pro.png
     webpage: https://proadhikary.github.io
 
