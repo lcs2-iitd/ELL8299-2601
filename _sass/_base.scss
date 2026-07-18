@@ -409,6 +409,10 @@ a.tosu {
     text-align: center;
     margin: 0px;
     margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .image--cover {
