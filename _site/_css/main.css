@@ -148,7 +148,7 @@ a.tosu { color: #b00000; background: #f5f5f5; text-decoration: none; padding: 2p
 
 .profile-pic-gallary { padding: 0px; display: inline; }
 
-.image--cover-container { width: 90px; float: left; text-align: center; margin: 0px; margin-right: 40px; }
+.image--cover-container { width: 100px; float: left; text-align: center; margin: 0px; margin-right: 40px; }
 
 .image--cover { width: 80px; height: 80px; border-radius: 50%; margin-bottom: 10px; object-fit: cover; object-position: center right; }
 
