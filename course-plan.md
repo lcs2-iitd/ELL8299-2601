@@ -6,7 +6,7 @@ permalink: /course-plan/
 
 - **Foundations of Large Language Models** -- Transformers and self-attention, Pre-training and scaling, Instruction fine-tuning, Alignment and preference optimization, Decoding strategies
 
-- **Privacy in Large Language Models** -- Privacy fundamentals, Text sanitization, Memorization and data extraction, Membership inference attacks, Prompt and in-context learning leakage, Prompt injection attacks, Differential privacy, Privacy-preserving in-context learning, Synthetic data generation, Federated learning, Machine unlearning, Trusted execution environments and cryptographic techniques
+- **Privacy in Large Language Models** -- Privacy fundamentals, Text sanitization, Memorization and data extraction, Membership inference attacks, Prompt and in-context learning leakage, Prompt injection attacks, Differential privacy
 
 - **Security and Robustness** -- Adversarial attacks in continuous and discrete spaces, Gradient-based discrete optimization, Jailbreaking techniques, Transferability of adversarial attacks, Safety training failures, Training data poisoning, Alignment faking, Evaluation awareness, Chain-of-thought faithfulness, Indirect prompt injection, Memory poisoning in agentic systems, Monitoring and verification, Automated red teaming, Policy languages and compositional verification
 
