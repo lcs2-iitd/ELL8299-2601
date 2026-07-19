@@ -19,6 +19,3 @@ permalink: /course-plan/
 - **Uncertainty and Trustworthy Generation** -- Confidence estimation and calibration, Self-knowledge in language models, Semantic uncertainty, Unsupported claim detection, Claim-level risk estimation, Abstention and deferral, Risk-controlled generation, Evidence grounding, Auditability and oversight, Grounded and governed LLM systems, LLM judges, RAG, multimodal systems, and AI agents
 
 - **Interpretability** -- Attention and feature attribution, Mechanistic interpretability, Probing methods, Logit Lens and Patchscopes, Activation patching, Neuron-level analysis, Circuits and causal abstraction, Polysemanticity, Linear representation hypothesis, Dictionary learning, Transcoders and cross-coders, Model diffing, Activation steering, Interpretability for alignment and safety
-
-- **Emerging Research Directions** -- Open challenges in trustworthy LLMs, Responsible deployment of foundation models, Future directions in safe, reliable, and accountable AI
- 
