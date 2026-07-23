@@ -1,8 +1,8 @@
 {% if include.lecture.links %}
 {% for link in include.lecture.links %}
-[<a title="Download {{ link.name }}"
+[<a title="Download {{ link.name }}" target="_blank" rel="noopener"
   href="{% if link.url contains '://' or link.url contains 'http' %}{{ link.url }}{% else %}{{ link.url | prepend: site.baseurl }}{% endif %}"
-  {% if link.url contains '://' or link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>
+  {% if link.url contains '://' or link.url contains 'http' %} target="_blank" rel="noopener" {% endif %}>
   {{ link.name }}
 </a>]
 {% endfor %}
