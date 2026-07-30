@@ -14,6 +14,20 @@
     </div>
 
     {% include footer.html %}
+
+    <script>
+      // <base target="_blank"> makes every link open in a new tab by default.
+      // Internal links (same-site, non-PDF) and in-page anchors stay in this window.
+      document.querySelectorAll('a[href]').forEach(function (a) {
+        var href = a.getAttribute('href');
+        var internal = href.indexOf('/') === 0 ||
+          href.indexOf('https://lcs2-iitd.github.io/ELL8299-2601/') === 0 ||
+          href.indexOf('#') === 0;
+        if (internal && href.toLowerCase().indexOf('pdf') === -1) {
+          a.setAttribute('target', '_self');
+        }
+      });
+    </script>
   </body>
 
 </html>
