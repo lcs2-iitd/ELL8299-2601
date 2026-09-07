@@ -11,6 +11,7 @@ You will be able to download the external materials and exam questions here.
 ## Exam Questions
 
 * [Quiz 1 Question Paper](static_files/exams/Quiz1.pdf) ([Solutions](static_files/exams/Quiz1Solutions.pdf))
+* [Quiz 2 Question Paper](static_files/exams/Quiz2.pdf) ([Solutions](static_files/exams/Quiz2Solutions.pdf))
   
 ## Textbook
 * <a href="https://www.amazon.in/dp/936386474X/" target="_blank">Introduction to Large Language Models</a>, Tanmoy Chakraborty
