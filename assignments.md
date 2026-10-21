@@ -5,6 +5,7 @@ permalink: /assignments/
 ---
 
 - [Assignment 1](/ELL8299-2601/static_files/pdfs/A1.pdf) released. Deadline: September 14, 2026 -- 05:00 PM IST.
+- [Assignment 2](/ELL8299-2601/static_files/pdfs/A2.pdf) released. Deadline: November 5, 2026 -- 11:59 PM IST.
 
 <!-- You can download the assignments from here. -->
 
