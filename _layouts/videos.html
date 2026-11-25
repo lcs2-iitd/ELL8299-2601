@@ -1,0 +1,67 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign videos = site.data.videos %}
+<p class="playlist-summary">{{ videos | size }} videos</p>
+
+<ol class="playlist">
+  {% for video in videos %}
+  {% assign lecture = nil %}
+  {% if video.lecture %}
+  {% assign lecture = site.lectures | where: "order", video.lecture | first %}
+  {% endif %}
+  {% assign available = false %}
+  {% if video.youtube_id and video.youtube_id != "" %}{% assign available = true %}{% endif %}
+  <li class="playlist-item{% unless available %} playlist-item-pending{% endunless %}">
+    <span class="playlist-index">{{ forloop.index }}</span>
+
+    {% if available %}
+    <a class="playlist-thumb" href="https://youtu.be/{{ video.youtube_id }}" target="_blank" rel="noopener"
+      title="Watch “{{ video.title }}” on YouTube">
+      <img src="https://i.ytimg.com/vi/{{ video.youtube_id }}/mqdefault.jpg" alt="" loading="lazy" width="320" height="180">
+      <span class="playlist-play"><i class="fas fa-play"></i></span>
+      {% if video.duration %}<span class="playlist-duration">{{ video.duration }}</span>{% endif %}
+    </a>
+    {% else %}
+    <div class="playlist-thumb playlist-thumb-pending">
+      <span>Coming soon</span>
+    </div>
+    {% endif %}
+
+    <div class="playlist-details">
+      {% if available %}
+      <a class="playlist-title" href="https://youtu.be/{{ video.youtube_id }}" target="_blank" rel="noopener">{{ video.title }}</a>
+      {% else %}
+      <span class="playlist-title">{{ video.title }}</span>
+      {% endif %}
+
+      <div class="playlist-meta">
+        {% if video.unit %}<span class="playlist-unit">{{ video.unit }}</span>{% endif %}
+        {% if video.instructor %}<span>{{ video.instructor }}</span>{% endif %}
+        {% if video.date %}<span>{{ video.date }}</span>{% endif %}
+        {% if video.duration %}<span>{{ video.duration }}</span>{% endif %}
+      </div>
+
+      {% if lecture.tldr %}
+      <div class="playlist-description">{{ lecture.tldr }}</div>
+      {% endif %}
+
+      <div class="playlist-links">
+        {% if available %}
+        [<a href="https://youtu.be/{{ video.youtube_id }}" target="_blank" rel="noopener">watch</a>]
+        {% endif %}
+        {% if lecture %}
+        {% for link in lecture.links %}
+        {% unless link.name == "video" %}
+        [<a href="{% if link.url contains '://' %}{{ link.url }}{% else %}{{ link.url | prepend: site.baseurl }}{% endif %}">{{ link.name }}</a>]
+        {% endunless %}
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ol>

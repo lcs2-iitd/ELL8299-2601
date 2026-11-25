@@ -1,0 +1,230 @@
+# Course video playlist, in playlist order. Source: 'Youtube Links' tab of the course sheet.
+# youtube_id: leave empty for videos that are not published yet.
+# lecture: matches the `order` field of the file in _lectures (for tl;dr and slides).
+
+- title: "Promotional Video"
+  instructor: "Tanmoy Chakraborty"
+  date: "July 23, 2026"
+  youtube_id: "l6JYuH39LnM"
+  duration: "6:49"
+
+- title: "Course Introduction"
+  unit: "Introduction"
+  instructor: "Tanmoy Chakraborty"
+  date: "July 23, 2026"
+  youtube_id: "p8T48sqIGao"
+  duration: "57:26"
+  lecture: 1
+
+- title: "Introduction to Language Models and Neural Language Models"
+  unit: "Introduction"
+  instructor: "Mausam"
+  date: "July 27, 2026"
+  youtube_id: "OUDGFL0KjLk"
+  duration: "1:22:46"
+  lecture: 2
+
+- title: "Introduction to Transformers - I"
+  unit: "Introduction"
+  instructor: "Mausam"
+  date: "July 30, 2026"
+  youtube_id: "ThjUxfTvY2A"
+  duration: "1:07:08"
+  lecture: 3
+
+- title: "Introduction to Transformers - II"
+  unit: "Introduction"
+  instructor: "Tanmoy Chakraborty"
+  date: "August 03, 2026"
+  youtube_id: "IlbwS-MtleM"
+  duration: "1:19:38"
+  lecture: 4
+
+- title: "Introduction to Transformers - III"
+  unit: "Introduction"
+  instructor: "Gaurav Pandey"
+  date: "August 06, 2026"
+  youtube_id: "YhJbQEswbqw"
+  duration: "1:04:43"
+  lecture: 5
+
+- title: "Privacy - I: Introduction to Privacy and Text Sanitization"
+  unit: "Privacy"
+  instructor: "Tanmoy Chakraborty"
+  date: "August 10, 2026"
+  youtube_id: "nlnf8ASuEwI"
+  duration: "1:04:05"
+  lecture: 6
+
+- title: "Privacy - II: Privacy Attacks in LLMs"
+  unit: "Privacy"
+  instructor: "Tanmoy Chakraborty"
+  date: "August 13, 2026"
+  youtube_id: "IYzxqgOzCfg"
+  duration: "1:37:17"
+  lecture: 7
+
+- title: "Privacy - III: Privacy Defenses in LLMs"
+  unit: "Privacy"
+  instructor: "Tanmoy Chakraborty"
+  date: "August 17, 2026"
+  youtube_id: "nZ7yB8jqCVM"
+  duration: "58:23"
+  lecture: 8
+
+- title: "Bias and Fairness - I: Introduction"
+  unit: "Bias and Fairness"
+  instructor: "Yatin Nandwani"
+  date: "September 07, 2026"
+  youtube_id: "2ceINkZ9bjA"
+  duration: "58:12"
+  lecture: 10
+
+- title: "Bias and Fairness - II: Metrics"
+  unit: "Bias and Fairness"
+  instructor: "Yatin Nandwani"
+  date: "September 10, 2026"
+  youtube_id: "ZmWR-g38fgM"
+  duration: "1:07:14"
+  lecture: 11
+
+- title: "Bias and Fairness - III: Mitigation"
+  unit: "Bias and Fairness"
+  instructor: "Yatin Nandwani"
+  date: "September 21, 2026"
+  youtube_id: "4Zk6p6kFkyM"
+  duration: "1:14:11"
+  lecture: 12
+
+- title: "Watermarking - I: Introduction"
+  unit: "Watermarking"
+  instructor: "Mausam"
+  date: "September 24, 2026"
+  youtube_id: "WKRARYPoOEA"
+  duration: "59:30"
+  lecture: 13
+
+- title: "Watermarking - II: How to do?"
+  unit: "Watermarking"
+  instructor: "Mausam"
+  date: "October 05, 2026"
+  youtube_id: "pwbXcvSe05I"
+  duration: "1:14:59"
+  lecture: 14
+
+- title: "Uncertainty in LLMs - I: Trustworthy Confidence"
+  unit: "Uncertainty"
+  instructor: "Sourish Dasgupta"
+  date: "October 08, 2026"
+  youtube_id: "_s7L35OpTfY"
+  duration: "1:02:04"
+  lecture: 15
+
+- title: "Uncertainty in LLMs - II: Semantic and Claim-Level Risk"
+  unit: "Uncertainty"
+  instructor: "Sourish Dasgupta"
+  date: "October 12, 2026"
+  youtube_id: "j7qayoke6V0"
+  duration: "1:07:01"
+  lecture: 16
+
+- title: "Uncertainty in LLMs - III: Safe Non-Answering"
+  unit: "Uncertainty"
+  instructor: "Sourish Dasgupta"
+  date: "October 15, 2026"
+  youtube_id: "VX1rfoF7oTU"
+  duration: "1:15:42"
+  lecture: 17
+
+- title: "Uncertainty in LLMs - IV: Accountable LLM Systems"
+  unit: "Uncertainty"
+  instructor: "Sourish Dasgupta"
+  date: "October 19, 2026"
+  youtube_id: "RbvPsm_Re_4"
+  duration: "1:15:43"
+  lecture: 18
+
+- title: "Hallucination in LLMs - I: Why LLMs Hallucinate?"
+  unit: "Hallucination"
+  instructor: "Dinesh Raghu"
+  date: "October 22, 2026"
+  youtube_id: "TO8OllDhSdI"
+  duration: "1:07:19"
+  lecture: 19
+
+- title: "Hallucination in LLMs - II: How much do LLMs Hallucinate?"
+  unit: "Hallucination"
+  instructor: "Dinesh Raghu"
+  date: "October 26, 2026"
+  youtube_id: "_IJkOECQ1-U"
+  duration: "1:11:14"
+  lecture: 20
+
+- title: "Hallucination in LLMs - III: What can we do?"
+  unit: "Hallucination"
+  instructor: "Dinesh Raghu"
+  date: "October 29, 2026"
+  youtube_id: "529CsQyurFg"
+  duration: "1:12:25"
+  lecture: 21
+
+- title: "Interpretability - I: Objectives and Motivations"
+  unit: "Interpretability"
+  instructor: "Tanmoy Chakraborty"
+  date: "November 02, 2026"
+  youtube_id: "iCv4HbZzt9M"
+  duration: "1:12:30"
+  lecture: 22
+
+- title: "Interpretability - II: Objectives and Motivations"
+  unit: "Interpretability"
+  instructor: "Tanmoy Chakraborty"
+  date: "November 05, 2026"
+  youtube_id: "Rwh4IVVTHrY"
+  duration: "50:40"
+  lecture: 23
+
+- title: "Interpretability - III: Circuits in LLMs"
+  unit: "Interpretability"
+  instructor: "Tanmoy Chakraborty"
+  date: "November 12, 2026"
+  youtube_id: "VsskR7Zo1KQ"
+  duration: "1:03:04"
+  lecture: 24
+
+- title: "Interpretability - IV: Causal Abstraction"
+  unit: "Interpretability"
+  date: "November 16, 2026"
+  youtube_id: "6IxTRXql9dI"
+  duration: "45:35"
+  lecture: 25
+
+- title: "Security and Robustness - I: Finding and Evaluating Adversarial Inputs"
+  unit: "Security and Robustness"
+  instructor: "Gaurav Pandey"
+  date: "August 24, 2026"
+  youtube_id: "uYH5j8MuGr4"
+  duration: "1:01:36"
+  lecture: 26
+
+- title: "Security and Robustness - II: Why Safety Training Fails"
+  unit: "Security and Robustness"
+  instructor: "Gaurav Pandey"
+  date: "August 27, 2026"
+  youtube_id: ""
+  lecture: 27
+
+- title: "Security and Robustness - III: Monitoring and Securing LLM Agents"
+  unit: "Security and Robustness"
+  instructor: "Gaurav Pandey"
+  date: "August 31, 2026"
+  youtube_id: ""
+  lecture: 28
+
+- title: "Wrap up: Closing Notes"
+  instructor: "Mausam"
+  date: "November 16, 2026"
+  youtube_id: "O4PS6fFPlOQ"
+  duration: "32:14"
+  lecture: 29
+

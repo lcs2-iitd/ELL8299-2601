@@ -5,7 +5,8 @@ layout: page
 {{ content }}
 
 <ul id="archive">
-  {% for lecture in site.lectures %}
+  {% assign ordered_lectures = site.lectures | sort: "order" %}
+  {% for lecture in ordered_lectures %}
   <li class="archiveposturl" style="background: transparent">
     <div class="lecture-container">
       <!-- {% if lecture.thumbnail %}
