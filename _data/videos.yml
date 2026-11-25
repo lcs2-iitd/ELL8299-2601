@@ -2,12 +2,6 @@
 # youtube_id: leave empty for videos that are not published yet.
 # lecture: matches the `order` field of the file in _lectures (for tl;dr and slides).
 
-- title: "Promotional Video"
-  instructor: "Tanmoy Chakraborty"
-  date: "July 23, 2026"
-  youtube_id: "l6JYuH39LnM"
-  duration: "6:49"
-
 - title: "Course Introduction"
   unit: "Introduction"
   instructor: "Tanmoy Chakraborty"
@@ -78,7 +72,7 @@
   date: "September 07, 2026"
   youtube_id: "2ceINkZ9bjA"
   duration: "58:12"
-  lecture: 10
+  lecture: 9
 
 - title: "Bias and Fairness - II: Metrics"
   unit: "Bias and Fairness"
@@ -86,7 +80,7 @@
   date: "September 10, 2026"
   youtube_id: "ZmWR-g38fgM"
   duration: "1:07:14"
-  lecture: 11
+  lecture: 10
 
 - title: "Bias and Fairness - III: Mitigation"
   unit: "Bias and Fairness"
@@ -94,7 +88,7 @@
   date: "September 21, 2026"
   youtube_id: "4Zk6p6kFkyM"
   duration: "1:14:11"
-  lecture: 12
+  lecture: 11
 
 - title: "Watermarking - I: Introduction"
   unit: "Watermarking"
@@ -102,7 +96,7 @@
   date: "September 24, 2026"
   youtube_id: "WKRARYPoOEA"
   duration: "59:30"
-  lecture: 13
+  lecture: 12
 
 - title: "Watermarking - II: How to do?"
   unit: "Watermarking"
@@ -110,7 +104,7 @@
   date: "October 05, 2026"
   youtube_id: "pwbXcvSe05I"
   duration: "1:14:59"
-  lecture: 14
+  lecture: 13
 
 - title: "Uncertainty in LLMs - I: Trustworthy Confidence"
   unit: "Uncertainty"
@@ -118,7 +112,7 @@
   date: "October 08, 2026"
   youtube_id: "_s7L35OpTfY"
   duration: "1:02:04"
-  lecture: 15
+  lecture: 14
 
 - title: "Uncertainty in LLMs - II: Semantic and Claim-Level Risk"
   unit: "Uncertainty"
@@ -126,7 +120,7 @@
   date: "October 12, 2026"
   youtube_id: "j7qayoke6V0"
   duration: "1:07:01"
-  lecture: 16
+  lecture: 15
 
 - title: "Uncertainty in LLMs - III: Safe Non-Answering"
   unit: "Uncertainty"
@@ -134,7 +128,7 @@
   date: "October 15, 2026"
   youtube_id: "VX1rfoF7oTU"
   duration: "1:15:42"
-  lecture: 17
+  lecture: 16
 
 - title: "Uncertainty in LLMs - IV: Accountable LLM Systems"
   unit: "Uncertainty"
@@ -142,7 +136,7 @@
   date: "October 19, 2026"
   youtube_id: "RbvPsm_Re_4"
   duration: "1:15:43"
-  lecture: 18
+  lecture: 17
 
 - title: "Hallucination in LLMs - I: Why LLMs Hallucinate?"
   unit: "Hallucination"
@@ -150,7 +144,7 @@
   date: "October 22, 2026"
   youtube_id: "TO8OllDhSdI"
   duration: "1:07:19"
-  lecture: 19
+  lecture: 18
 
 - title: "Hallucination in LLMs - II: How much do LLMs Hallucinate?"
   unit: "Hallucination"
@@ -158,7 +152,7 @@
   date: "October 26, 2026"
   youtube_id: "_IJkOECQ1-U"
   duration: "1:11:14"
-  lecture: 20
+  lecture: 19
 
 - title: "Hallucination in LLMs - III: What can we do?"
   unit: "Hallucination"
@@ -166,7 +160,7 @@
   date: "October 29, 2026"
   youtube_id: "529CsQyurFg"
   duration: "1:12:25"
-  lecture: 21
+  lecture: 20
 
 - title: "Interpretability - I: Objectives and Motivations"
   unit: "Interpretability"
@@ -174,7 +168,7 @@
   date: "November 02, 2026"
   youtube_id: "iCv4HbZzt9M"
   duration: "1:12:30"
-  lecture: 22
+  lecture: 21
 
 - title: "Interpretability - II: Objectives and Motivations"
   unit: "Interpretability"
@@ -182,7 +176,7 @@
   date: "November 05, 2026"
   youtube_id: "Rwh4IVVTHrY"
   duration: "50:40"
-  lecture: 23
+  lecture: 22
 
 - title: "Interpretability - III: Circuits in LLMs"
   unit: "Interpretability"
@@ -190,14 +184,14 @@
   date: "November 12, 2026"
   youtube_id: "VsskR7Zo1KQ"
   duration: "1:03:04"
-  lecture: 24
+  lecture: 23
 
 - title: "Interpretability - IV: Causal Abstraction"
   unit: "Interpretability"
   date: "November 16, 2026"
   youtube_id: "6IxTRXql9dI"
   duration: "45:35"
-  lecture: 25
+  lecture: 24
 
 - title: "Security and Robustness - I: Finding and Evaluating Adversarial Inputs"
   unit: "Security and Robustness"
@@ -205,26 +199,27 @@
   date: "August 24, 2026"
   youtube_id: "uYH5j8MuGr4"
   duration: "1:01:36"
-  lecture: 26
+  lecture: 25
 
 - title: "Security and Robustness - II: Why Safety Training Fails"
   unit: "Security and Robustness"
   instructor: "Gaurav Pandey"
   date: "August 27, 2026"
   youtube_id: ""
-  lecture: 27
+  lecture: 26
 
 - title: "Security and Robustness - III: Monitoring and Securing LLM Agents"
   unit: "Security and Robustness"
   instructor: "Gaurav Pandey"
   date: "August 31, 2026"
-  youtube_id: ""
-  lecture: 28
+  youtube_id: "GvmRQ5Nrp-k"
+  duration: "1:12:59"
+  lecture: 27
 
 - title: "Wrap up: Closing Notes"
   instructor: "Mausam"
   date: "November 16, 2026"
   youtube_id: "O4PS6fFPlOQ"
   duration: "32:14"
-  lecture: 29
+  lecture: 28
 
