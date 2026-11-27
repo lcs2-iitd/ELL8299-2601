@@ -8,9 +8,9 @@ layout: default
             <!-- | <b><a href="https://forms.gle/A3ZpHd3sB4ErSMA79">Subscribe</a> to Newsletter!</b> -->
         </span></h1>
 
-    <br />
+    {% include newsletter.html %}
     <center>
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/DCEftEgEdG8" title="Trustworthy LLMs - Promotional Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe class="video-embed" src="https://www.youtube.com/embed/DCEftEgEdG8" title="Trustworthy LLMs - Promotional Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </center>
     <br />
     <h2>Course Description</h2>
@@ -34,7 +34,7 @@ layout: default
     </ul>
     {% endif %}
     <div style="margin-bottom: 20px;">
-        <div style="width:60%; float: left">
+        <div class="people-col people-col-instructors">
             <!-- <h2>Instructors</h2> -->
             <!-- <div class="image--cover-container">
                 <img src="{{site.data.people.instructor.profile_pic | prepend: site.baseurl }}" class="image--cover">
@@ -56,7 +56,7 @@ layout: default
             </div>
         </div>
 
-        <div style="width:40%; float: left">
+        <div class="people-col people-col-tas">
             <div class="profile-pic-gallary ">
                 <h2>Teaching Assistants</h2>
                 {% for ta in site.data.people.teaching_assistants %}

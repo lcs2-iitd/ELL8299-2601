@@ -668,3 +668,103 @@ a.playlist-title:hover {
     flex: 0 0 100%;
   }
 }
+
+/* Schedule page */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  font-size: 0.9em;
+
+  th,
+  td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    border-bottom: 2px solid $primary-color;
+  }
+
+  tbody tr:hover {
+    background: $accent-color;
+  }
+}
+
+.schedule-date,
+.schedule-links {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .schedule-links {
+    white-space: normal;
+  }
+}
+
+.schedule-actions {
+  margin-bottom: 15px;
+}
+
+.schedule-button {
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 0 8px 8px 0;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+  background: $primary-color;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+
+  &:hover,
+  &:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.schedule-button-secondary {
+  background: #fff;
+  color: $primary-color;
+
+  &:hover,
+  &:visited {
+    color: $primary-color;
+  }
+}
+
+.schedule-type {
+  display: inline-block;
+  min-width: 62px;
+  margin-right: 6px;
+  color: #888;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.schedule-type-event {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.schedule-upcoming {
+  background: #fcf8e3;
+}
+
+.schedule-badge {
+  display: inline-block;
+  padding: 0 7px;
+  border-radius: 10px;
+  background: $primary-color;
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: bold;
+  white-space: nowrap;
+}

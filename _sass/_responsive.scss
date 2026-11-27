@@ -1,0 +1,207 @@
+/**
+ * Small-screen fixes. Imported last so it can override the rules above.
+ */
+
+// Embedded video keeps a 16:9 shape at any width.
+.video-embed {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+// Instructors and teaching assistants sit side by side on wide screens.
+.people-col {
+  float: left;
+}
+
+.people-col-instructors {
+  width: 60%;
+}
+
+.people-col-tas {
+  width: 40%;
+}
+
+.post-content,
+.home {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.post-content img,
+.home img {
+  max-width: 100%;
+}
+
+// Newsletter sign-up banner shown at the top of every page.
+.newsletter-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 25px;
+  padding: 10px 16px;
+  border: 1px solid #faebcc;
+  border-left: 5px solid $primary-color;
+  border-radius: 5px;
+  background: #fcf8e3;
+}
+
+.newsletter-text {
+  font-weight: 600;
+
+  i {
+    margin-right: 6px;
+    color: $primary-color;
+  }
+}
+
+.newsletter-button {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 5px;
+  background: $primary-color;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  white-space: nowrap;
+
+  &:hover,
+  &:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+@include media-query($on-palm) {
+  // Header: leave room for the menu button and shrink the title to fit.
+  .site-header .wrapper {
+    padding-top: 12px;
+    padding-bottom: 8px;
+  }
+
+  .site-header table {
+    width: auto;
+    margin: 0 50px 0 0;
+  }
+
+  .site-logo {
+    width: 52px;
+  }
+
+  .site-title,
+  .site-title a {
+    font-size: 19px;
+    letter-spacing: -0.5px;
+  }
+
+  .site-nav {
+    top: 14px;
+    right: 15px;
+    z-index: 200;
+
+    // Open on tap (see header.html) instead of only on hover.
+    &:hover .trigger {
+      display: none;
+    }
+
+    &.open .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link:not(:first-child) {
+      margin-left: 0;
+    }
+
+    .menu > li {
+      margin: 0;
+    }
+  }
+
+  .post-title {
+    font-size: 30px;
+  }
+
+  // Home: stack the people sections and wrap the photos evenly.
+  .people-col-instructors,
+  .people-col-tas {
+    float: none;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .profile-pic-gallary {
+    display: flex;
+    flex-wrap: wrap;
+
+    h2 {
+      width: 100%;
+    }
+  }
+
+  .image--cover-container {
+    float: none;
+    width: 33.33%;
+    margin: 0 0 12px 0;
+    justify-content: flex-start;
+  }
+
+  // Schedule: each row becomes a small card instead of a three-column table.
+  .schedule-table {
+    thead {
+      display: none;
+    }
+
+    tr,
+    td {
+      display: block;
+    }
+
+    tr {
+      padding: 8px 6px;
+      border-bottom: 1px solid #eee;
+    }
+
+    td {
+      padding: 1px 4px;
+      border-bottom: 0;
+    }
+
+    td:empty {
+      display: none;
+    }
+
+    .schedule-date {
+      color: #666;
+      font-size: 0.9em;
+    }
+
+    .schedule-links {
+      white-space: normal;
+    }
+  }
+
+  .schedule-type {
+    min-width: 0;
+  }
+
+  // Lists take less indent so text has more room.
+  .post-content ul,
+  .post-content ol,
+  .home ul {
+    margin-left: 18px;
+  }
+
+  ul#archive {
+    margin-left: 0;
+  }
+}

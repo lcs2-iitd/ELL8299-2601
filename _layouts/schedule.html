@@ -8,10 +8,71 @@ layout: default
 
 {{ content }}
 
-<div class="home" style="font-size: 0.8em;">
-    <!-- <i>Note: To make a copy in your personal calender, please click on the bottom-left</i> <b>+Google Calender</b> -->
-    <!-- <i>icon</i>. -->
-    <iframe
-        src="https://calendar.google.com/calendar/embed?src=30e4f1a47515de0dd79a59e73f1df8a850d4f84f32ddd97c6f8ee07ba4ae4651%40group.calendar.google.com&ctz=Asia%2FKolkata"
-        style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+{% assign cal_id = site.data.schedule.calendar_id | url_encode %}
+<div class="home">
+    <p class="schedule-actions">
+        <a class="schedule-button" href="https://calendar.google.com/calendar/render?cid={{ cal_id }}" target="_blank" rel="noopener">
+            <i class="fas fa-calendar-plus"></i> Add to Google Calendar
+        </a>
+        <a class="schedule-button schedule-button-secondary" href="https://calendar.google.com/calendar/ical/{{ cal_id }}/public/basic.ics">
+            <i class="fas fa-download"></i> iCal (.ics)
+        </a>
+    </p>
+
+    {% comment %} Build one row per event as "sort-key@@html", then sort newest first. {% endcomment %}
+    {% assign rows = "" | split: "" %}
+
+    {% for lecture in site.lectures %}
+    {% capture row %}{{ lecture.date | date: "%Y-%m-%dT%H:%M" }}@@<tr data-date="{{ lecture.date | date: '%Y-%m-%d' }}">
+        <td class="schedule-date">{{ lecture.format_date }}</td>
+        <td><span class="schedule-type">Lecture</span> {{ lecture.title }}</td>
+        <td class="schedule-links">{% include lecture_links.html lecture=lecture %}</td>
+    </tr>{% endcapture %}
+    {% assign rows = rows | push: row %}
+    {% endfor %}
+
+    {% for event in site.data.schedule.events %}
+    {% capture row %}{{ event.date }}T23:59@@<tr data-date="{{ event.date }}">
+        <td class="schedule-date">{{ event.date | date: "%B %d, %Y" }}</td>
+        <td><span class="schedule-type schedule-type-event">{{ event.type }}</span> {% if event.url %}<a href="{{ event.url | prepend: site.baseurl }}">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</td>
+        <td class="schedule-links"></td>
+    </tr>{% endcapture %}
+    {% assign rows = rows | push: row %}
+    {% endfor %}
+
+    {% assign rows = rows | sort | reverse %}
+
+    <table class="schedule-table" id="schedule-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th>Material</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}{{ row | split: "@@" | last }}
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
+
+<script>
+    // Mark events dated today or later as upcoming.
+    (function () {
+        var now = new Date();
+        var pad = function (n) { return (n < 10 ? "0" : "") + n; };
+        var today = now.getFullYear() + "-" + pad(now.getMonth() + 1) + "-" + pad(now.getDate());
+        var rows = document.querySelectorAll("#schedule-table tbody tr");
+        for (var i = 0; i < rows.length; i++) {
+            if (rows[i].getAttribute("data-date") >= today) {
+                rows[i].className += " schedule-upcoming";
+                var badge = document.createElement("span");
+                badge.className = "schedule-badge";
+                badge.appendChild(document.createTextNode("Upcoming"));
+                rows[i].cells[1].appendChild(document.createTextNode(" "));
+                rows[i].cells[1].appendChild(badge);
+            }
+        }
+    })();
+</script>

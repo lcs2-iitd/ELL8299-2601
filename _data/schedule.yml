@@ -1,0 +1,41 @@
+# Non-lecture events shown on the Schedule page (lectures come from _lectures).
+# date: YYYY-MM-DD, used for sorting and for the "Upcoming" marker.
+
+calendar_id: "30e4f1a47515de0dd79a59e73f1df8a850d4f84f32ddd97c6f8ee07ba4ae4651@group.calendar.google.com"
+
+events:
+  - date: "2026-08-17"
+    title: "Quiz 1"
+    type: "Quiz"
+
+  - date: "2026-09-07"
+    title: "Quiz 2"
+    type: "Quiz"
+
+  - date: "2026-09-14"
+    title: "Assignment 1 due, 05:00 PM IST"
+    type: "Deadline"
+    url: /assignments/
+
+  - date: "2026-10-26"
+    title: "Quiz 3"
+    type: "Quiz"
+
+  - date: "2026-11-05"
+    title: "Assignment 2 due, 11:59 PM IST"
+    type: "Deadline"
+    url: /assignments/
+
+  - date: "2026-11-12"
+    title: "Quiz 4"
+    type: "Quiz"
+
+  - date: "2026-11-29"
+    title: "Project submission, by midnight"
+    type: "Deadline"
+    url: /project/
+
+  - date: "2026-11-30"
+    title: "Project presentations, 9 AM to 2 PM"
+    type: "Project"
+    url: /project/

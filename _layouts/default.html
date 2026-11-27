@@ -9,6 +9,7 @@
 
     <div class="page-content">
       <div class="wrapper">
+        {% unless page.layout == "home" %}{% include newsletter.html %}{% endunless %}
         {{ content }}
       </div>
     </div>
